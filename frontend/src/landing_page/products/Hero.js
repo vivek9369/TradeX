@@ -2,8 +2,18 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div>
-   <h1>Hero</h1>
+    
+    <div className='continer'>
+      <div className='text-center mt-5'>
+   <h1>Technology</h1>
+   <h3 className='text-muted mt-3'>Sleek, mordern and intutive trading platform</h3>
+   <p className='mt-3'>Check out our {""} 
+    <a href='' style={{textDecoration: "none"}}>
+      investment offering {" "}
+    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+    </a>
+    </p>
+    </div>
     </div>
   )
 }

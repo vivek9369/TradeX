@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -20,9 +21,9 @@ const Hero = () => {
             Invest in stocks, mutual funds, ETFs, and more with ease.
           </p>
 
-          <button className="btn btn-primary btn-lg px-5 mt-3 mb-5">
+          <Link to="/signUp" className="btn btn-primary btn-lg px-5 mt-3 mb-5">
             Sign Up Now
-          </button>
+          </Link>
         </div>
 
       </div>
