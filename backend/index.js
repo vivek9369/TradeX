@@ -50,6 +50,11 @@ mongoose.connect(URL)
   });
 
 
+// Root route
+app.get("/", (req, res) => {
+  res.json({ status: "✅ TradeX API is live!", version: "1.0.0" });
+});
+
 app.get("/addPositions", async (req, res) => {
   let templatePostion = [
     {
