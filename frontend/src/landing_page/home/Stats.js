@@ -45,9 +45,9 @@ function Stats() {
             alt="TradeX Ecosystem"
           />
           <div className='text-center'>
-            <a href='' style={{textDecoration: "none"}}className='mx-5'>Explore our product <i class="fa-solid fa-arrow-right"></i>
+            <a href="#products" style={{textDecoration: "none"}} className='mx-5'>Explore our product <i className="fa-solid fa-arrow-right"></i>
           </a>
-            <a href='' style={{textDecoration: "none"}}>Try Kite <i class="fa-solid fa-arrow-right"></i>
+            <a href="#try-kite" style={{textDecoration: "none"}}>Try Kite <i className="fa-solid fa-arrow-right"></i>
           </a>
           </div>
         </div>

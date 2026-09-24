@@ -12,7 +12,7 @@ function Team() {
         <div className='col-5'>
           <img src="media/images/ceo.png" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} alt="CEO" />
           <h5 className='mt-3 mb-0 fw-bold'>Arjun Mehta</h5>
-          <p className='text-muted' style={{ fontSize: '0.95rem' }}>Founder & CEO, TradeX</p>
+          <p className='text-muted' style={{ fontSize: '0.95rem' }}>Founder &amp; CEO, TradeX</p>
         </div>
         <div className='col-5'>
           <p>
@@ -28,9 +28,9 @@ function Team() {
           </p>
           <p className='mt-3 mb-2 text-muted' style={{ fontSize: '0.9rem' }}>Connect on :</p>
           <div className='d-flex gap-2 flex-wrap'>
-            <a href='/' style={{ textDecoration: 'none', color: '#fff', backgroundColor: '#386df5', padding: '4px 14px', borderRadius: '20px', fontSize: '0.85rem' }}>Homepage</a>
-            <a href='' style={{ textDecoration: 'none', color: '#fff', backgroundColor: '#386df5', padding: '4px 14px', borderRadius: '20px', fontSize: '0.85rem' }}>TradingQnA</a>
-            <a href='' style={{ textDecoration: 'none', color: '#fff', backgroundColor: '#1da1f2', padding: '4px 14px', borderRadius: '20px', fontSize: '0.85rem' }}>Twitter</a>
+            <a href="/" style={{ textDecoration: 'none', color: '#fff', backgroundColor: '#386df5', padding: '4px 14px', borderRadius: '20px', fontSize: '0.85rem' }}>Homepage</a>
+            <a href="#tradingqna" style={{ textDecoration: 'none', color: '#fff', backgroundColor: '#386df5', padding: '4px 14px', borderRadius: '20px', fontSize: '0.85rem' }}>TradingQnA</a>
+            <a href="#twitter" style={{ textDecoration: 'none', color: '#fff', backgroundColor: '#1da1f2', padding: '4px 14px', borderRadius: '20px', fontSize: '0.85rem' }}>Twitter</a>
           </div>
         </div>
       </div>

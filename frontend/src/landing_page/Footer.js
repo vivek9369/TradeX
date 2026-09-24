@@ -32,30 +32,30 @@ function Footer() {
 
           <div className='col'>
             <p>Company</p>
-            <a href='' className='footer-link'>About</a>
-            <a href='' className='footer-link'>Product</a>
-            <a href='' className='footer-link'>Pricing</a>
-            <a href='' className='footer-link'>Referral Programme</a>
-            <a href='' className='footer-link'>Careers</a>
-            <a href='' className='footer-link'>Trade X.Tech</a>
-            <a href='' className='footer-link'>Press & Media</a>
-            <a href='' className='footer-link'>Trade X</a>
+            <a href="#about" className='footer-link'>About</a>
+            <a href="#product" className='footer-link'>Product</a>
+            <a href="#pricing" className='footer-link'>Pricing</a>
+            <a href="#referral" className='footer-link'>Referral Programme</a>
+            <a href="#careers" className='footer-link'>Careers</a>
+            <a href="#tech" className='footer-link'>Trade X.Tech</a>
+            <a href="#press" className='footer-link'>Press &amp; Media</a>
+            <a href="#tradex" className='footer-link'>Trade X</a>
           </div>
 
           <div className='col'>
             <p>Support</p>
-            <a href='' className='footer-link'>Contact</a>
-            <a href='' className='footer-link'>Support Portal</a>
-            <a href='' className='footer-link'>Trade X Connect blog</a>
-            <a href='' className='footer-link'>List of Charges</a>
-            <a href='' className='footer-link'>Download & Resources</a>
+            <a href="#contact" className='footer-link'>Contact</a>
+            <a href="#support" className='footer-link'>Support Portal</a>
+            <a href="#blog" className='footer-link'>Trade X Connect blog</a>
+            <a href="#charges" className='footer-link'>List of Charges</a>
+            <a href="#downloads" className='footer-link'>Download &amp; Resources</a>
           </div>
 
           <div className='col'>
             <p>Account</p>
-            <a href='' className='footer-link'>Open an Account</a>
-            <a href='' className='footer-link'>Fund transfer</a>
-            <a href='' className='footer-link'>60 day challenge</a>
+            <a href="#open-account" className='footer-link'>Open an Account</a>
+            <a href="#fund-transfer" className='footer-link'>Fund transfer</a>
+            <a href="#challenge" className='footer-link'>60 day challenge</a>
           </div>
         </div>
 

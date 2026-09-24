@@ -8,9 +8,9 @@ function Hero() {
    <h1>Technology</h1>
    <h3 className='text-muted mt-3'>Sleek, mordern and intutive trading platform</h3>
    <p className='mt-3'>Check out our {""} 
-    <a href='' style={{textDecoration: "none"}}>
+    <a href="#investment" style={{textDecoration: "none"}}>
       investment offering {" "}
-    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+    <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
     </a>
     </p>
     </div>
