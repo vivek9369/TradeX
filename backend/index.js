@@ -18,7 +18,11 @@ const PORT = process.env.PORT || 8000;
 const URL = process.env.MONGO_URL;
 const app = express();
 
-app.use(cors({ origin: ["http://localhost:3000", "http://localhost:3001"], credentials: true }));
+const allowedOrigins = process.env.ALLOWED_ORIGINS
+  ? process.env.ALLOWED_ORIGINS.split(",").map((o) => o.trim())
+  : ["http://localhost:3000", "http://localhost:3001"];
+
+app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(bodyParser.json());
 
 //  JWT Middleware 
@@ -211,7 +215,7 @@ app.get("/me", authenticateToken, (req, res) => {
   res.json({ user: req.user });
 });
 
-// ── Funds Routes ──────────────────────────────────────────
+// ── Funds Routes 
 app.get("/allFunds", authenticateToken, async (req, res) => {
   try {
     let funds = await FundsModel.findOne({});

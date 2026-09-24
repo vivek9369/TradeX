@@ -16,11 +16,13 @@ function Login() {
     e.preventDefault();
     setError('');
     setLoading(true);
+    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+    const DASHBOARD_URL = process.env.REACT_APP_DASHBOARD_URL || 'http://localhost:3001';
     try {
-      const res = await axios.post('http://localhost:8000/login', form);
+      const res = await axios.post(`${API_URL}/login`, form);
       const { token, name } = res.data;
       // Redirect to dashboard, passing token via URL
-      window.location.href = `http://localhost:3001/auth-callback?token=${encodeURIComponent(token)}&name=${encodeURIComponent(name)}&email=${encodeURIComponent(form.email)}`;
+      window.location.href = `${DASHBOARD_URL}/auth-callback?token=${encodeURIComponent(token)}&name=${encodeURIComponent(name)}&email=${encodeURIComponent(form.email)}`;
     } catch (err) {
       setError(err.response?.data?.message || 'Login failed. Please try again.');
     } finally {

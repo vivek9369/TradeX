@@ -15,12 +15,14 @@ function Signup() {
     e.preventDefault();
     setError('');
     setLoading(true);
+    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+    const DASHBOARD_URL = process.env.REACT_APP_DASHBOARD_URL || 'http://localhost:3001';
     try {
-      const res = await axios.post('http://localhost:8000/signup', form);
+      const res = await axios.post(`${API_URL}/signup`, form);
       if (res.status === 201) {
         const { token, name } = res.data;
         // Pass token to dashboard via URL so it can store it in its own localStorage
-        window.location.href = `http://localhost:3001/auth-callback?token=${encodeURIComponent(token)}&name=${encodeURIComponent(name)}&email=${encodeURIComponent(form.email)}`;
+        window.location.href = `${DASHBOARD_URL}/auth-callback?token=${encodeURIComponent(token)}&name=${encodeURIComponent(name)}&email=${encodeURIComponent(form.email)}`;
       }
     } catch (err) {
       setError(err.response?.data?.message || 'Signup failed. Please try again.');

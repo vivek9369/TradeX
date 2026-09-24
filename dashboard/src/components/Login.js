@@ -19,8 +19,9 @@ const Login = () => {
     e.preventDefault();
     setError('');
     setLoading(true);
+    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
     try {
-      const res = await axios.post('http://localhost:8000/login', form);
+      const res = await axios.post(`${API_URL}/login`, form);
       const { token, name } = res.data;
       // Store token directly since we're already on the dashboard origin
       login(token, { name, email: form.email });
@@ -87,7 +88,7 @@ const Login = () => {
 
         <p style={styles.footer}>
           Don't have an account?{' '}
-          <a href="http://localhost:3000/signUp" style={styles.link}>Sign Up</a>
+          <a href={`${process.env.REACT_APP_FRONTEND_URL || 'http://localhost:3000'}/signUp`} style={styles.link}>Sign Up</a>
         </p>
       </div>
     </div>
